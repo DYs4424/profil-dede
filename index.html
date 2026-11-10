@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dede Yuyun Yuningsih - Web Developer's learner</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dede Yuyun Yuningsih</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',sans-serif;background:#f5f6ff;color:#333}
+header{background:linear-gradient(135deg,#667eea,#764ba2);color:white;text-align:center;padding:50px 20px 70px}
+.profile-img{width:140px;height:140px;border-radius:50%;border:4px solid white;object-fit:cover;box-shadow:0 10px 25px rgba(0,0,0,0.2)}
+header h1{margin-top:18px;font-size:30px}
+header p{opacity:0.9;margin-top:6px}
+.container{width:90%;max-width:700px;margin:-30px auto 20px}
+main{background:white;padding:30px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+h2{color:#764ba2;border-left:4px solid #667eea;padding-left:10px;margin-bottom:15px;margin-top:10px}
+.bio p{margin-top:10px;line-height:1.7}
+.project-card{background:#f7f7ff;border:1px solid #ececff;padding:20px;border-radius:12px;margin-top:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:12px;margin-right:8px}
+.btn-live{background:#667eea;color:white}
+.btn-git{background:#222;color:white}
+.social-media a{display:inline-block;background:#eef0ff;color:#667eea;padding:8px 14px;border-radius:20px;text-decoration:none;font-weight:bold;margin:6px 8px 0 0}
+.social-media a:hover{background:#667eea;color:white}
+input,textarea{width:100%;padding:12px;border:2px solid #eee;border-radius:10px;margin-top:6px;margin-bottom:12px}
+button{width:100%;padding:13px;background:linear-gradient(135deg,#667eea,#764ba2);color:white;border:none;border-radius:10px;font-weight:bold;font-size:16px;cursor:pointer}
+footer{text-align:center;padding:25px;color:#999;font-size:14px}
+</style>
 </head>
 <body>
-  <header>
-    <img src="https://drive.google.com/thumbnail?id=1qexU6Bq3_2OQ-J_8jL1DJEp6T2NqxD-a&sz=w500" alt="Foto Dede" class="profile-img">
-    <h1>Dede Yuyun Yuningsih</h1>
-    <p class="title">Informatics Student Semester 3 | Web Developer Pemula</p>
-    <p class="subtitle">Tasikmalaya, Indonesia</p>
-  </header>
+<header>
+<img src="https://drive.google.com/thumbnail?id=1qexU6Bq3_2OQ-J_8jL1DJEp6T2NqxD-a&sz=w500" class="profile-img" alt="Foto Dede">
+<h1>Dede Yuyun Yuningsih</h1>
+<p>Informatics Student Semester 3 | Web Developer Pemula</p>
+<p style="font-size:13px;opacity:0.7">Tasikmalaya, Indonesia</p>
+</header>
 
-  <div class="container">
-    <main>
-      <section class="bio">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Saya Dede, Mahasiswi Informatika Semester 3. Saya sedang fokus belajar Web Programming (PHP & MySQL) dan bercita-cita kerja sebagai Web Engineer.</p>
-      </section>
+<div class="container">
+<main>
+<section class="bio">
+<h2>Tentang Saya</h2>
+<p>Halo! Saya Dede, mahasiswi Informatika dari Tasikmalaya. Saya sedang belajar membuat website profil dan aplikasi CRUD.</p>
+</section>
 
-      <section class="projects">
-        <h2>🚀 Project Terbaru</h2>
-        <div class="project-card">
-          <h3>CRUD Mahasiswa - PHP Native</h3>
-          <p>Aplikasi manajemen data mahasiswa dengan fitur Create, Read, Update, Delete. Sudah live!</p>
-          <a href="https://dedeyuyun.gt.tc" target="_blank" class="btn-live">🔴 Live Demo</a>
-          <a href="https://github.com/DYs4424/crud-mahasiswa-php" target="_blank" class="btn-github">💻 Source Code</a>
-        </div>
-      </section>
+<section>
+<h2>🚀 Project</h2>
+<div class="project-card">
+<h3>CRUD Mahasiswa</h3>
+<p>Aplikasi PHP & MySQL untuk manajemen data mahasiswa.</p>
+<a href="https://dedeyuyun.gt.tc" target="_blank" class="btn btn-live">Lihat Live</a>
+<a href="https://github.com/DYs4424" target="_blank" class="btn btn-git">GitHub</a>
+</div>
+</section>
 
-      <section class="social-media">
-        <h2>Connect With Me</h2>
-        <a href="https://github.com/DYs4424" target="_blank">GitHub - DYs4424</a>
-        <a href="https://instagram.com/nyd24594" target="_blank">Instagram - nyd24594</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      </section>
+<section class="social-media">
+<h2>Connect</h2>
+<a href="https://github.com/DYs4424" target="_blank">GitHub - DYs4424</a>
+<a href="https://instagram.com/nyd24594" target="_blank">IG - nyd24594</a>
+</section>
 
-      <section class="contact-form">
-        <h2>Hubungi Saya</h2>
-        <form id="formKontak" action="https://formspree.io/f/mnqebwzg" method="POST">
-          <label>Nama Lengkap:</label>
-          <input type="text" name="nama" placeholder="Ketik nama Anda" required>
-          <label>Alamat Email:</label>
-          <input type="email" name="email" placeholder="contoh@email.com" required>
-          <label>Pesan Anda:</label>
-          <textarea name="pesan" rows="4" placeholder="Tulis pesan..." required></textarea>
-          <button type="submit">Kirim Pesan</button>
-        </form>
-      </section>
-    </main>
-  </div>
+<section>
+<h2>Hubungi Saya</h2>
+<form action="https://formspree.io/f/mnqebwzg" method="POST">
+<label>Nama</label>
+<input type="text" name="nama" required placeholder="Nama kamu">
+<label>Email</label>
+<input type="email" name="email" required placeholder="email@contoh.com">
+<label>Pesan</label>
+<textarea name="pesan" rows="4" required placeholder="Tulis pesan..."></textarea>
+<button type="submit">Kirim Pesan</button>
+</form>
+</section>
 
-  <footer>
-    <p>&copy; 2026 Dede Yuyun Yuningsih - Made with ❤️ in Tasikmalaya</p>
-  </footer>
+</main>
+</div>
+<footer>&copy; 2026 Dede Yuyun Yuningsih - Tasikmalaya</footer>
 </body>
 </html>
